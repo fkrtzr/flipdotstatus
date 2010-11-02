@@ -1,0 +1,17 @@
+application: flipdotstatus
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /ping
+  script: flipdotstatus.py
+
+- url: /status
+  script: flipdotstatus.py
+
+- url: /img
+  static_dir: img
+
+
+

@@ -1,0 +1,4 @@
+cron:
+- description: status ping
+  url: /ping
+  schedule: every 3 minutes
