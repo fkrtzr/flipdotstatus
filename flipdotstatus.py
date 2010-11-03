@@ -61,7 +61,7 @@ class OverallOpeningTime(webapp.RequestHandler):
 			elif (not first.status) and (not second.status):
 				closed += second.date - first.date
 			count = count - 2
-		self.redirect("http://chart.apis.google.com/chart?cht=p3&chd=t:"+str(opened.seconds)+","+str(closed.seconds)+"&chs=350x100&chl=Open|Closed&chdl="+str(opened.seconds/60)+"%20hours|"+str(closed.seconds/60)+"%20hours")
+		self.redirect("http://chart.apis.google.com/chart?cht=p3&chd=t:"+str(opened.seconds)+","+str(closed.seconds)+"&chs=350x100&chl=Open|Closed&chdl="+str(opened.seconds/60/60)+"%20hours|"+str(closed.seconds/60/60)+"%20hours")
 
 			
 			
